@@ -19,35 +19,33 @@
         <div class="col m3 s6">
             <a class="waves-effect waves-light btn-large transparent" onclick="openNav()"><i class="large material-icons">menu</i></a>
         </div>
-        <div id="myNav" class="overlay">
+        <div id="newWindow" class="overlay">
             <div class="row">
-                <div class="col m4 s6" style="background-color: white; height:100%;">x</div>
+                <div class="col m4 s10" style="background-color: white; height:100%; font-size: 50px;">x</div>
                 <div class="col m5"></div>
-                <div class="col m3 s6">
+                <div class="col m3 s2" id="exitWindow">
                     <a href="javascript:void(0)" onclick="closeNav()">&times;</a>
                 </div>
             </div>
-            <!-- <div class="row"> -->
-            <div class="col m4 s6 overlay-nav">
+            <div class="col m4 s12 overlay-nav">
                 <a href="#">Home</a>
                 <a href="#">Portfolio</a>
                 <a href="#">Contact Me</a>
             </div>
+            <div class="col m8 s12">hello</div>
         </div>
-        <div class="col m8 s6">
-        </div>
-        <!-- </div> -->
+    </div>
     </div>
     </div>
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.2/js/materialize.min.js"></script>
     <script type="text/javascript">
     function openNav() {
-        $("#myNav").css("height", "100%");
+        $("#newWindow").css("height", "100%");
     }
 
     function closeNav() {
-        $("#myNav").css("height", "0%");
+        $("#newWindow").css("height", "0%");
     }
     </script>
 </body>
@@ -105,13 +103,22 @@ body {
     color: #f1f1f1;
 }
 
-@media screen and (max-height: 1050px) {
-    .overlay a {
+@media screen and (max-height: 670px) {
+    .overlay {
         font-size: 20px
     }
     .overlay {
         font-size: 40px;
         overflow-y: scroll;
+    }
+    #exitWindow {
+        background-color: white;
+        color: black;
+        height: 75px;
+    }
+    .row .col{
+        padding: 0 rem;
+        min-height: 0;
     }
 }
 </style>
