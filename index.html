@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.2/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- <link rel="stylesheet" type="text/css" href="/assets/style.css" /> -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display">
 </head>
 
 <body>
@@ -28,7 +29,7 @@
                 </div>
             </div>
             <div class="col m4 s12 overlay-nav">
-                <a href="#">Home</a>
+                <a href="#logo">Home</a>
                 <div class="divider"></div>
                 <a href="#">Portfolio</a>
                 <div class="divider"></div>
@@ -52,6 +53,12 @@
             <!-- Edit inside nav bar right side -->
         </div>
     </div>
+    <div class="row">
+        <div class="col m1"></div>
+        <div class="col m10 s12" id="logo">
+            <h3>Full Stack Developer</h3>
+        </div>
+    </div>
     <!-- <div class="row">
         <div class="col m4 s12">
             <div class="card">
@@ -69,15 +76,9 @@
             </div>
         </div>
     </div> -->
-    <div class="row">
-        <div class="col m1"></div>
-        <div class="col m10 s12" id="logo">
-            <h3>i'm a full stack developer</h3>
-        </div>
-    </div>
     <div class="row footer" id="row">
         <div class="col m12 s12">
-            <h3>Raymundo&copy;</h3>
+            <p>Ray&copy;</p>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery.js"></script>
@@ -95,7 +96,8 @@
 <style>
 body {
     background: url("assets/images/home.png");
-    height: auto;
+    height: 100%;
+    background-image: cover;
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -104,6 +106,12 @@ body {
     margin-top: 230px;
     background: white;
     text-align: center;
+    font-family: "Playfair Display";
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 15.4px;
 }
 
 
