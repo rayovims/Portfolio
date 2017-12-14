@@ -12,11 +12,11 @@
 
 <body>
     <div class="row" id="nav">
-        <div class="col m3 s6">
+        <div class="col m3 s10">
             <div>Raymundo Ojeda</div>
         </div>
         <div class="col m6"></div>
-        <div class="col m3 s6">
+        <div class="col m3 s2">
             <a class="waves-effect waves-light btn-large transparent" onclick="openNav()"><i class="large material-icons">menu</i></a>
         </div>
         <div id="newWindow" class="overlay">
@@ -31,6 +31,17 @@
                 <a href="#">Home</a>
                 <a href="#">Portfolio</a>
                 <a href="#">Contact Me</a>
+                <div class="row">
+                    <div class="col m4 s4">
+                        <img style="background:white; margin-top: 50px;" src="assets/images/3.png" width="64px" height="64px">
+                    </div>
+                    <div class="col m4 s4">
+                        <img style="background:white; margin-top: 50px;" src="assets/images/6.png" width="128px" height="128px">
+                    </div>
+                    <div class="col m4 s4">
+                        <img style="background:white; margin-top: 50px;" src="assets/images/7.png" width="64px" height="64px">
+                    </div>
+                </div>
             </div>
             <div class="col m8 s12">hello</div>
         </div>
@@ -103,20 +114,20 @@ body {
     color: #f1f1f1;
 }
 
-@media screen and (max-height: 670px) {
-    .overlay {
-        font-size: 20px
-    }
+@media screen and (max-width: 390px) {
     .overlay {
         font-size: 40px;
         overflow-y: scroll;
     }
+    /*.overlay-nav {
+        height: 40%;
+    }*/
     #exitWindow {
         background-color: white;
         color: black;
         height: 75px;
     }
-    .row .col{
+    .row .col {
         padding: 0 rem;
         min-height: 0;
     }
