@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.2/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/assets/style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="/assets/style.css" /> -->
 </head>
 
 <body>
@@ -33,13 +33,13 @@
                 <a href="#">Contact Me</a>
                 <div class="row">
                     <div class="col m4 s4">
-                        <img style="background:white; margin-top: 50px;" src="assets/images/3.png" width="64px" height="64px">
+                        <img class="social" onClick="parent.open('https://github.com/rayovims')" src="assets/images/3.png" width="64px" height="64px" alt="github">
                     </div>
                     <div class="col m4 s4">
-                        <img style="background:white; margin-top: 50px;" src="assets/images/6.png" width="128px" height="128px">
+                        <img class="social" onClick="parent.open('https://www.linkedin.com/in/raymundo-ojeda-049005141/')" src="assets/images/6.png" width="128px" height="128px" alt="linkedIn">
                     </div>
                     <div class="col m4 s4">
-                        <img style="background:white; margin-top: 50px;" src="assets/images/7.png" width="64px" height="64px">
+                        <img class="social" onClick="parent.open('https://stackoverflow.com/users/8413624/raymundo-ojeda')" src="assets/images/7.png" width="64px" height="64px" alt="Stack Overflow">
                     </div>
                 </div>
             </div>
@@ -98,6 +98,15 @@ body {
     margin: 0;
     height: 100%;
     width: 100%;
+}
+
+.social {
+    background: white;
+    margin-top: 50px;
+}
+
+.social:hover {
+    cursor: pointer;
 }
 
 .overlay a {
