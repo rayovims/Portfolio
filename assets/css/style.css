@@ -24,18 +24,22 @@ input {
 }
 
 .home {
-    width: 100%;
     background: url("../images/home3-background.jpg");
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
 }
 
 .portfolio {
-    height: 400px;
-    background: white;
+    position: relative;
+    z-index: 99;
+    height: 100vh;
+    background: url("../images/home4-background.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .center {
@@ -47,6 +51,7 @@ input {
 }
 
 #logo {
+    z-index: 1;
     position: fixed;
     left: 50%;
     top: 50%;
