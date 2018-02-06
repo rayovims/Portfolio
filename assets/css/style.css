@@ -24,7 +24,7 @@ input {
 }
 
 .home {
-    background: url("../images/home3-background.jpg");
+    background: url("../images/2.jpg");
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
@@ -55,9 +55,9 @@ input {
     position: fixed;
     left: 50%;
     top: 50%;
-    transform: translate(-45%,-75%);
+    transform: translate(-15%,-75%);
     text-align: left;
-    color: white;
+    color: black;
     font-size: 48px;
     letter-spacing: 4px;
     font-family: 'Play', sans-serif;
