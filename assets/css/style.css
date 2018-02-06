@@ -24,7 +24,7 @@ input {
 }
 
 .home {
-    background: url("../images/2.jpg");
+    background: url("../images/4.png");
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
@@ -35,7 +35,7 @@ input {
     position: relative;
     z-index: 99;
     height: 100vh;
-    background: url("../images/home4-background.png");
+    background: url("../images/background.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@ input {
     transform: translate(-15%,-75%);
     text-align: left;
     color: black;
-    font-size: 48px;
+    font-size: 38px;
     letter-spacing: 4px;
     font-family: 'Play', sans-serif;
 }
@@ -143,7 +143,7 @@ input {
 }
 
 .blink {
-    font-size: 85px;
+    font-size: 65px;
     position: relative;
     top: 12.5px;
     animation: blink 2s steps(5, start) infinite;
