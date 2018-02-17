@@ -31,11 +31,37 @@ input {
     background-size: cover;
 }
 
+.transition {
+    height: 50vh;
+    position: relative;
+    z-index: 2;
+    background: white;
+    /*background: linear-gradient(to right, black , white);*/
+}
+
+.Skills {
+    font-size: 40px;
+    background: white;
+    position: relative;
+    z-index: 2;
+}
+
+.skill-imgs {
+    height: 10vh;
+}
+/*.tech {
+    position: relative;
+    z-index: 2;
+    background: url("../images/tech.jpeg");
+    height: 100vh;
+    background-size: cover;
+}*/
+
 .portfolio {
     position: relative;
     z-index: 99;
     height: 100vh;
-    background: url("../images/background.png");
+    background: url("../images/portfolio.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
