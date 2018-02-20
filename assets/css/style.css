@@ -1,42 +1,62 @@
+.nav-bar {
+  background-color: black;
+  color: white;
+  margin-bottom: 0;
+}
 .home {
-    background: url("../images/4.png");
-    height: 100vh;
-    background-position: center;
+  background: url("../images/4.png");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
 }
 
 #logo {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-20%,-45%);
-    text-align: left;
-    color: black;
-    font-size: 38px;
-    letter-spacing: 4px;
-    font-family: 'Play', sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-20%, -45%);
+  text-align: left;
+  color: black;
+  font-size: 38px;
+  letter-spacing: 4px;
+  font-family: "Play", sans-serif;
 }
 
-.shift{
-    position: relative;
-    top: -35px;
+.shift {
+  position: relative;
+  top: -35px;
 }
 
 .blink {
-    font-size: 65px;
-    position: relative;
-    top: -1.5px;
-    animation: blink 2s steps(5, start) infinite;
-    -webkit-animation: blink 1s steps(5, start) infinite;
+  font-size: 65px;
+  position: relative;
+  top: -1.5px;
+  animation: blink 2s steps(5, start) infinite;
+  -webkit-animation: blink 1s steps(5, start) infinite;
 }
 
 @keyframes blink {
-    to {
-        visibility: hidden;
-    }
+  to {
+    visibility: hidden;
+  }
 }
 
 @-webkit-keyframes blink {
-    to {
-        visibility: hidden;
-    }
+  to {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #logo {
+    font-size: 13px;
+    transform: translate(-20%, -27%);
+  }
+  .shift {
+    top: -47px;
+  }
+  .fix-logo {
+    position: relative;
+    top: 10px;
+  }
 }
