@@ -1,79 +1,7 @@
-html {
-    overflow-x: hidden;
-}
-
-body {
-    overflow-x: hidden;
-}
-
-input {
-    color: white;
-}
-
-#fix {
-    margin-bottom: 200px;
-}
-
-#send-mail {
-    background: teal;
-    color: white;
-    height: 50px;
-    width: 111px;
-    cursor: pointer;
-    font-size: 20px;
-}
-
 .home {
     background: url("../images/4.png");
     height: 100vh;
-    background-attachment: fixed;
     background-position: center;
-    background-size: cover;
-}
-
-.transition {
-    height: 50vh;
-    position: relative;
-    z-index: 2;
-    background: white;
-    /*background: linear-gradient(to right, black , white);*/
-}
-
-.Skills {
-    font-size: 40px;
-    background: white;
-    position: relative;
-    z-index: 2;
-}
-
-.skill-imgs {
-    height: 10vh;
-}
-/*.tech {
-    position: relative;
-    z-index: 2;
-    background: url("../images/tech.jpeg");
-    height: 100vh;
-    background-size: cover;
-}*/
-
-.portfolio {
-    position: relative;
-    z-index: 99;
-    height: 100vh;
-    background: url("../images/portfolio.png");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
 }
 
 #logo {
@@ -81,7 +9,7 @@ input {
     position: fixed;
     left: 50%;
     top: 50%;
-    transform: translate(-15%,-75%);
+    transform: translate(-15%,-41%);
     text-align: left;
     color: black;
     font-size: 38px;
@@ -89,89 +17,15 @@ input {
     font-family: 'Play', sans-serif;
 }
 
-.row {
-    margin-bottom: 0;
-}
-
-#nav {
-    background: black;
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 28px;
-    text-align: center
-}
-
-#row {
-    margin-bottom: 0;
-}
-
-.overlay {
-    height: 0;
-    width: 100%;
-    position: fixed;
-    z-index: 99;
-    left: 0;
-    top: 0;
-    background-color: black;
-    background-color: rgba(0, 0, 0, 0.9);
-    overflow-x: hidden;
-    overflow-y: hidden;
-    transition: 0.5s;
-}
-
-.overlay-nav {
-    background-color: white;
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    width: 100%;
-}
-
-.social {
-    background: white;
-    margin-top: 50px;
-}
-
-#linked {
-    padding-left: 0;
-}
-
-.social:hover {
-    cursor: pointer;
-}
-
-.footer {
-    bottom: 0;
-    color: black;
-    background-color: white;
-    width: 100%;
-    text-align: center;
-}
-
-.overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.overlay a:hover,
-.overlay a:focus {
-    color: #f1f1f1;
-}
-
 .shift{
     position: relative;
-    top: -45px;
+    top: -35px;
 }
 
 .blink {
     font-size: 65px;
     position: relative;
-    top: 12.5px;
+    top: -1.5px;
     animation: blink 2s steps(5, start) infinite;
     -webkit-animation: blink 1s steps(5, start) infinite;
 }
@@ -185,37 +39,5 @@ input {
 @-webkit-keyframes blink {
     to {
         visibility: hidden;
-    }
-}
-
-@media only screen and (max-device-width: 1024px) {
-    .parallax {
-        background-attachment: scroll;
-    }
-}
-
-@media screen and (max-width: 390px) {
-    .overlay {
-        font-size: 40px;
-        overflow-y: scroll;
-    }
-
-    #logo {
-        font-size: 20px;
-        transform: translate(-10%, -57%);
-    }
-
-    #name {
-        font-size: 35px;
-        overflow: auto;
-    }
-    #exitWindow {
-        background-color: white;
-        color: black;
-        height: 100vh;
-    }
-    .row .col {
-        padding: 0 rem;
-        min-height: 0;
     }
 }

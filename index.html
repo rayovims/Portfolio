@@ -12,122 +12,56 @@
 </head>
 
 <body>
-    <div class="row" id="nav">
-        <div class="col m3 s10">
-        </div>
-        <div class="col m6"></div>
-        <div class="col m3 s2">
-            <a class="waves-effect waves-light btn-large transparent" onclick="openNav()"><i class="large material-icons">menu</i></a>
-        </div>
-        <div id="newWindow" class="overlay">
-            <div class="row" id="row">
-                <div class="col m4 s10" style="background-color: white; height:100%; font-size: 50px;">x</div>
-                <div class="col m5"></div>
-                <div class="col m3 s2" id="exitWindow">
-                    <a onclick="closeNav()">&times;</a>
+    <div class="nav-bar">
+        <div class="row">
+            <div class="col s12">
+                <div class="col m2 s4">
+                    <p>Portfolio</p>
+                </div>
+                <div class="col m2 s4">
+                    <p>About</p>
+                </div>
+                <div class="col m2 s4">
+                    <p>Contact</p>
                 </div>
             </div>
-            <div class="col m4 s12 overlay-nav">
-                <a href="#logo">Home</a>
-                <a href="#">Portfolio</a>
-                <div class="divider"></div>
-                <div class="row">
-                    <div class="col m4 s4">
-                        <img class="social" onClick="parent.open('https://github.com/rayovims')" src="assets/images/3.png" width="64px" height="64px" alt="github">
-                    </div>
-                    <div class="col m4 s4" id="linked">
-                        <img class="social" onClick="parent.open('https://www.linkedin.com/in/raymundo-ojeda/')" src="assets/images/6.png" width="128px" height="128px" alt="linkedIn">
-                    </div>
-                    <div class="col m4 s4">
-                        <img class="social" onClick="parent.open('https://stackoverflow.com/users/8413624/raymundo-ojeda')" src="assets/images/7.png" width="64px" height="64px" alt="Stack Overflow">
-                    </div>
-                </div>
-            </div>
-            <div class="col m8 s12">
-                <h3>Contact Me</h3>
-                <form id="fix" class="container">
-                    <p>Subject</p>
-                    <input id="subject-form">
-                    <p>Message</p>
-                    <input id="body-form">
-                    <a class="waves-effect waves-light btn" id="send-mail">Send</a>
-                </form>
-            </div>
         </div>
     </div>
-    <div class="row home">
-    <div id="logo">
-        Raymundo = {
-        <p style="text-indent:40px; margin:0;">Fullstack: true
-            <br/>
-            <span class="shift">};<span class="blink">_</span></span>
-        </p>
-    </div>
-    </div>
-    <div class="Skills">
-        <div class="row">
-            [<div class="col m12">
-                <div class="col m6">
-                    <div class="col m12">
-                        <div class="col m2">
-                            <img class="skill-imgs" src="./assets/images/html.png"/>
-                        </div>
-                        <div class="col m2">
-                            Hi
-                        </div>
-                        <div class="col m2">
-                            Hi
-                        </div>
-                        <div class="col m2">
-                            Hi
-                        </div>
-                        <div class="col m2">
-                            Hi
-                        </div>
-                    </div>
-                </div>
+    <div class="home">
+        <div class="title-intro">
+            <div id="logo">
+                Raymundo = {
+                <p style="text-indent:40px; margin:0;">Fullstack: true
+                    <br/>
+                    <span class="shift">};
+                        <span class="blink">_</span>
+                    </span>
+                </p>
             </div>
-        </div>]
-    </div>
-    <div class="portfolio">
-        <div class="row">
-            <div class="col m12">
-            </div>
-        </div>
-    </div>
-    <div class="tech">
-        <div class="row">
-            <div class="col m12">
-            </div>
-        </div>
-    </div>
-    <div class="row footer" id="row">
-        <div class="col m12 s12">
-            <p>Raymundo Ojeda&copy;</p>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.2/js/materialize.min.js"></script>
     <script type="text/javascript">
-    function openNav() {
-        $("#newWindow").css("height", "100%");
-    }
+        function openNav() {
+            $("#newWindow").css("height", "100%");
+        }
 
-    function closeNav() {
-        $("#newWindow").css("height", "0%");
-    }
+        function closeNav() {
+            $("#newWindow").css("height", "0%");
+        }
 
-    $("#send-mail").on("click", function() {
+        $("#send-mail").on("click", function () {
 
-        const to = "mailto:rayovims@gmail.com";
-        const subject = "?subject=" + $("#subject-form").val().trim();
-        const body = "&body=" + $("#body-form").val().trim();
+            const to = "mailto:rayovims@gmail.com";
+            const subject = "?subject=" + $("#subject-form").val().trim();
+            const body = "&body=" + $("#body-form").val().trim();
 
-        $(this).attr({
-            href: to + subject + body
+            $(this).attr({
+                href: to + subject + body
+            });
+
         });
-
-    });
     </script>
 </body>
 
