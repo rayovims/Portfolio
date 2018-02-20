@@ -45,9 +45,15 @@
   margin-bottom: 0;
 }
 
+.portfolio-header {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
 .collection {
     position: relative;
-    top: 30vh;
+    top: 10vh;
 }
 
 a {
