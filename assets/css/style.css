@@ -38,22 +38,43 @@
 }
 
 #portfolio {
-  background: url("../images/8.png");
-  height: 100vh;
+  /* background: url("../images/8.png");
   background-position: center;
   background-size: cover;
+  background-repeat: repeat; */
+  background: #a4312b;
   margin-bottom: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .portfolio-header {
-    text-align: center;
-    color: white;
-    font-size: 40px;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  margin-bottom: 0;
+  position: relative;
+  top: 40px;
 }
 
 .collection {
-    position: relative;
-    top: 10vh;
+  position: relative;
+  top: 10vh;
+}
+
+.collection-name {
+  color: black;
+}
+.fix-bullet {
+  list-style: disc;
+}
+
+.image {
+  height: 240px;
+  background-size: cover;
+  background-position: center;
 }
 
 a {
