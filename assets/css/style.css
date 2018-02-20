@@ -37,22 +37,12 @@
   -webkit-animation: blink 1s steps(5, start) infinite;
 }
 
-#portfolio {
-  /* background: url("../images/8.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: repeat; */
-  background: #a4312b;
-  margin-bottom: 0;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.portfolio {
+    margin-bottom: 0;
 }
 
 .portfolio-header {
   text-align: center;
-  color: white;
   font-size: 40px;
   margin-bottom: 0;
   position: relative;
@@ -64,11 +54,13 @@
   top: 10vh;
 }
 
-.collection-name {
-  color: black;
+.collection .collection-item {
+    background-color: black;
+    color: white;
 }
-.fix-bullet {
-  list-style: disc;
+
+.collection-name {
+  
 }
 
 .image {
@@ -109,4 +101,11 @@ a:hover {
     position: relative;
     top: 10px;
   }
+}
+
+@media screen and (max-width: 1000px) {
+    #logo {
+        font-size: 30px;
+        transform: translate(-20%, -35%);
+    }
 }
