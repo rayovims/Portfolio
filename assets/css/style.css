@@ -5,11 +5,10 @@
 }
 
 #logo {
-    z-index: 1;
-    position: fixed;
+    position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-15%,-41%);
+    transform: translate(-20%,-45%);
     text-align: left;
     color: black;
     font-size: 38px;
