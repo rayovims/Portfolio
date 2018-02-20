@@ -13,40 +13,41 @@
 
 <body>
     <div class="row nav-bar">
-        <div class="col m2 s4">
-            <p>Portfolio</p>
+        <div class="col s4">
+            <a href="#portfolio">
+                <p>Portfolio</p>
+            </a>
         </div>
-        <div class="col m2 s4">
+        <div class="col s4">
             <p>About</p>
         </div>
-        <div class="col m2 s4">
+        <div class="col s4">
             <p>Contact</p>
         </div>
     </div>
-    <div class="home">
-        <div class="title-intro">
-            <div id="logo">
-                Raymundo = {
-                <p class="fix-logo" style="text-indent:40px; margin:0;">Fullstack: true
-                    <br/>
-                    <span class="shift">};
-                        <span class="blink">_</span>
-                    </span>
-                </p>
-            </div>
+    <div id="home">
+        <div id="logo">
+            Raymundo = {
+            <p class="fix-logo" style="text-indent:40px; margin:0;">Fullstack: true
+                <br/>
+                <span class="shift">};
+                    <span class="blink">_</span>
+                </span>
+            </p>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div>
+            <ul class="collection with-header">
+                <li class="collection-header">
+                    <h4>Hi</h4>
+                </li>
+            </ul>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.2/js/materialize.min.js"></script>
     <script type="text/javascript">
-        function openNav() {
-            $("#newWindow").css("height", "100%");
-        }
-
-        function closeNav() {
-            $("#newWindow").css("height", "0%");
-        }
-
         $("#send-mail").on("click", function () {
 
             const to = "mailto:rayovims@gmail.com";
