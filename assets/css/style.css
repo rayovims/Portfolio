@@ -16,10 +16,10 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-20%, -45%);
+  transform: translate(-20%, -50%);
   text-align: left;
   color: black;
-  font-size: 38px;
+  font-size: 44px;
   letter-spacing: 4px;
   font-family: "Play", sans-serif;
 }
@@ -69,7 +69,6 @@
     background: url("../images/background-blue.png");
     background-repeat: repeat;
     background-size: cover;
-    height: 100vh;
 }
 
 a {
@@ -95,7 +94,7 @@ a:hover {
 @media screen and (max-width: 480px) {
   #logo {
     font-size: 13px;
-    transform: translate(-20%, -12%);
+    transform: translate(-20%, -22%);
   }
   .shift {
     top: -47px;
@@ -106,9 +105,23 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 480px) {
     #logo {
         font-size: 30px;
         transform: translate(-20%, -35%);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #logo {
+        font-size: 40px;
+        transform: translate(-20%, -45%);
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #logo {
+        font-size: 60px;
+        transform: translate(-20%, -55%);
     }
 }
