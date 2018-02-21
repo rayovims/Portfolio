@@ -107,8 +107,8 @@ a:hover {
 
 @media screen and (min-width: 480px) {
     #logo {
-        font-size: 30px;
-        transform: translate(-20%, -35%);
+        font-size: 25px;
+        transform: translate(-20%, -30%);
     }
 }
 
