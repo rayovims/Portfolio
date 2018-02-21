@@ -82,13 +82,20 @@
   margin-bottom: 0;
 }
 
+#contact {
+  margin-bottom: 100px;
+}
+
+#send-mail {
+  background: rgb(53, 190, 214);
+}
 a {
   color: white;
 }
 
 a:hover {
   cursor: pointer;
-  color: rgb(45, 210, 240);
+  color: rgb(53, 190, 214);
 }
 
 @keyframes blink {
