@@ -94,7 +94,7 @@ a:hover {
 @media screen and (max-width: 480px) {
   #logo {
     font-size: 13px;
-    transform: translate(-20%, -22%);
+    transform: translate(-20%, -2%);
   }
   .shift {
     top: -47px;
