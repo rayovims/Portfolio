@@ -38,7 +38,17 @@
 }
 
 .portfolio {
-    margin-bottom: 100px;;
+  margin-bottom: 100px;
+}
+
+.github {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.deployed {
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .portfolio-header {
@@ -55,8 +65,8 @@
 }
 
 .collection .collection-item {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 .image {
@@ -66,10 +76,10 @@
 }
 
 #about {
-    background: url("../images/background-blue.png");
-    background-repeat: repeat;
-    background-size: cover;
-    margin-bottom: 0;
+  background: url("../images/background-blue.png");
+  background-repeat: repeat;
+  background-size: cover;
+  margin-bottom: 0;
 }
 
 a {
@@ -78,6 +88,7 @@ a {
 
 a:hover {
   cursor: pointer;
+  color: rgb(45, 210, 240);
 }
 
 @keyframes blink {
@@ -105,27 +116,27 @@ a:hover {
     top: 10px;
   }
   .image {
-      height: 156px;
+    height: 156px;
   }
 }
 
 @media screen and (min-width: 480px) {
-    #logo {
-        font-size: 25px;
-        transform: translate(-20%, -30%);
-    }
+  #logo {
+    font-size: 25px;
+    transform: translate(-20%, -30%);
+  }
 }
 
 @media screen and (min-width: 1000px) {
-    #logo {
-        font-size: 40px;
-        transform: translate(-20%, -45%);
-    }
+  #logo {
+    font-size: 40px;
+    transform: translate(-20%, -45%);
+  }
 }
 
 @media screen and (min-width: 1400px) {
-    #logo {
-        font-size: 60px;
-        transform: translate(-20%, -55%);
-    }
+  #logo {
+    font-size: 60px;
+    transform: translate(-20%, -55%);
+  }
 }
