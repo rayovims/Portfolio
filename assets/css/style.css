@@ -38,7 +38,7 @@
 }
 
 .portfolio {
-    margin-bottom: 0;
+    margin-bottom: 100px;;
 }
 
 .portfolio-header {
@@ -59,14 +59,17 @@
     color: white;
 }
 
-.collection-name {
-  
-}
-
 .image {
   height: 240px;
   background-size: cover;
   background-position: center;
+}
+
+#about {
+    background: url("../images/background-blue.png");
+    background-repeat: repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
 a {
