@@ -159,7 +159,7 @@
         </div>
         <div class="row">
             <div class="col m4 s12 center">
-                <img width="200px;" height="200px;" src="./assets/images/3.png">
+                <img style="margin-top: -75px; margin-bottom: 15px;" width="100px;" height="200px;" src="./assets/images/me.jpg">
             </div>
             <div class="col m8 s12 left">
                 <p>Challenge oriented developer who’s passion for technology has been there since birth. I love the idea of
@@ -175,33 +175,20 @@
             </div>
         </div>
         <div class="container">
-            <label>
-                Subject
-            </label>
-            <input id="subject-form">
-            <label>
-                Body
-            </label>
-            <input id="body-form">
-            <a id="send-mail" class="waves-effect waves-light btn">
-                <i class="material-icons left">send</i>Send</a>
+            <form method="POST" action="https://formspree.io/rayovims@gmail.com">
+                <input type="text" placeholder="Name" required name="name">
+                <input name="_gotcha" style="display:none;"/>
+                <input type="email" placeholder="Email" required name="_replyto">
+                <input name="message" placeholder="Message" required name="Message">
+                <button id="send-mail" class="wave-effect wave-light btn" type="submit" value="Send">
+                    <i class="material-icons left">send</i> SEND MESSAGE
+                </button>
+                <input type="hidden" name="_next" value="rayovims.github.io/Portfolio" />
+            </form>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.2/js/materialize.min.js"></script>
-    <script type="text/javascript">
-        $("#send-mail").on("click", function () {
-
-            const to = "mailto:rayovims@gmail.com";
-            const subject = "?subject=" + $("#subject-form").val().trim();
-            const body = "&body=" + $("#body-form").val().trim();
-
-            $(this).attr({
-                href: to + subject + body
-            });
-
-        });
-    </script>
 </body>
 
 </html>
